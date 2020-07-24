@@ -35,3 +35,9 @@
     background: #0e28bb;
     cursor: pointer;
   }
+.slider{
+   border:none; 
+   color:#f6931f; 
+   font-weight:bold;
+}
+ 

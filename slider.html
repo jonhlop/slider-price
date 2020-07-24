@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Slider - Range with fixed minimum</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#slider-range-min" ).slider({
+      range: "min",
+      value: 37,
+      min: 1,
+      max: 700,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.value );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
+  } );
+  </script>
+</head>
+<body>
+    <h1>SLIDER 1</h1>
+
+    <div class="slidecontainer">
+        <p class="price">Unidades: <span id="demo"></span></p>
+        <input type="range" min="1" max="300" value="50" class="slider" id="myRange">
+
+    </div>
+
+    <script src="function.js"></script>
+<p>
+  <label for="amount">Unidades: </label>
+  <input type="text" id="amount" readonly style="border:0; color:#0e28bb; font-weight:bold;">
+</p>
+ 
+<div id="slider-range-min"></div>
+ 
+ 
+</body>
+</html>
