@@ -1,10 +1,12 @@
 .slidecontainer {
     width: 100%;
+    font-size: 30px;
+    padding: 5px;
   }
   
   .slider {
     -webkit-appearance: none;
-    width: 100%;
+    width: 50%;
     height: 15px;
     border-radius: 5px;
     background: #d3d3d3;
@@ -23,15 +25,13 @@
     appearance: none;
     width: 25px;
     height: 25px;
-    border-radius: 50%;
-    background: #4CAF50;
+    background: #0e28bb;
     cursor: pointer;
   }
   
   .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    border-radius: 50%;
-    background: #4CAF50;
+    background: #0e28bb;
     cursor: pointer;
   }
